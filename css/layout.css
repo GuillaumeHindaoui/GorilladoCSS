@@ -1,0 +1,198 @@
+.centercolumn{
+  padding: 60px;
+}
+
+a.more-link-proboscis{
+  display:block;
+  margin: 10px auto;
+  width: 150px;
+  line-height:30px;
+  text-align:center;
+  border-radius: 8px;
+  background-color: #44BA32;
+  color:white;
+  text-decoration:none;
+}
+
+a.more-link{
+  display:block;
+  margin: 10px auto;
+  width: 150px;
+  line-height:50px;
+  text-align:center;
+  border-radius: 8px;
+  background-color: #44BA32;
+  color:white;
+  text-decoration:none;
+}
+
+a.more-link:hover{
+  animation: chatfooter 1s ease;
+}
+
+
+@keyframes chatfooter {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop{
+    position: fixed;
+  }
+}
+
+@media (min-width: 840px)
+{
+  .menu-toggle,
+  .main-menu .menu-close
+  {
+    display: none;
+  }
+
+  .main-menu
+  {
+    position: relative;
+    left: auto;
+    top: 25px;
+    height: auto;
+    display: block;
+  }
+  .main-menu ul
+  {
+    display: flex;
+
+    padding: 0;
+    height: auto;
+    width: auto;
+    background: none;
+  }
+  .main-menu a
+  {
+    color: rgb(26, 20, 72);
+    border: 0 !important;
+  }
+}
+
+header {
+    border-bottom: 1px solid #515151;
+    box-shadow: -1px -12px 25px -2px rgba(81,81,81,1);
+}
+
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.introduction {
+    max-width: 640px;
+    background: rgba(160, 160, 158, 0.5);
+    padding: 2em;
+    border: 1px solid #fff;
+}
+
+.home .hero {
+    position: relative;
+}
+
+.hero {
+    min-height: 80vh;
+    background-color: rgb(160, 160, 158);
+    background-image: url(images/bg-lanscape-03.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+.dossier .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .introduction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.introduction {
+    max-width: 640px;
+    background: rgba(160, 160, 158, 0.5);
+    padding: 2em;
+    border: 1px solid #fff;
+
+}
+
+header {
+    border-bottom: 1px solid #515151;
+    box-shadow: -1px -12px 25px -2px rgba(81,81,81,1);
+}
+
+.site-id {
+    float: left;
+}
+
+header nav {
+
+    float: right;
+    min-height: 2em;
+}
+
+nav li a {
+    display: grid;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 1em;
+    min-width: 9em;
+}
+
+.introduction h2 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.157em;
+}
+footer {
+    min-height: 50vh;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+}
+
+.gorilla-list {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 1em;
+}
+
+.gorilla-list img {
+    width: 100%;
+}
